@@ -11,4 +11,4 @@ categories = ["gui"]
 
 [dependencies]
 imgui = { git = "https://github.com/imgui-rs/imgui-rs", version = "0.12" }
-winit = { version = "0.30", default-features = false }
+winit = { version = "0.30.9", default-features = false }
