@@ -157,6 +157,14 @@ impl WinitPlatform {
             _ => (),
         }
     }
+
+    /// Handles a winit window event.
+    ///
+    /// This function performs the following actions (depends on the event):
+    ///
+    /// * window size / dpi factor changes are applied
+    /// * keyboard state is updated
+    /// * mouse state is updated
     pub fn handle_window_event(&mut self, io: &mut Io, window: &Window, event: &WindowEvent) {
         match *event {
             WindowEvent::Resized(physical_size) => {
